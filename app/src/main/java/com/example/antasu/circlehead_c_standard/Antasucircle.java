@@ -3,6 +3,7 @@ package com.example.antasu.circlehead_c_standard;
 /**
  * @author antasu
  * web:http://www.antasu.com
+ * 事了拂衣去 深藏功与名
  */
 
 import android.content.Context;
@@ -20,7 +21,7 @@ import android.support.v7.widget.AppCompatImageView;
 import android.util.AttributeSet;
 
 
-public class antasucircle extends AppCompatImageView {
+public class Antasucircle extends AppCompatImageView {
     private float width;
     private float height;
     private float radius;
@@ -28,15 +29,15 @@ public class antasucircle extends AppCompatImageView {
     private Paint paint2;
     private Matrix matrix;
 
-    public antasucircle(Context context) {
+    public Antasucircle(Context context) {
         this(context, null);
     }
 
-    public antasucircle(Context context, @Nullable AttributeSet attrs) {
+    public Antasucircle(Context context, @Nullable AttributeSet attrs) {
         this(context, attrs, 0);
     }
 
-    public antasucircle(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
+    public Antasucircle(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         paint = new Paint();
         paint2 = new Paint();
@@ -57,7 +58,9 @@ public class antasucircle extends AppCompatImageView {
     @Override
     protected void onDraw(Canvas canvas) {
         paint.setShader(initBitmapShader());
+        //设置画笔的透明度 这里为全透明
         paint2.setAlpha(0);
+        //设置重叠的方式
         paint2.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.DST_IN));
         int count = canvas.saveLayer(0.0F, 0.0F, getWidth(), getHeight(), null, Canvas.ALL_SAVE_FLAG);
 //        canvas.drawColor(Color.TRANSPARENT, PorterDuff.Mode.CLEAR);

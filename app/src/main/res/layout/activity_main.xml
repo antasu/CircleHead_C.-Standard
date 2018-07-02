@@ -8,7 +8,7 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <com.example.antasu.circlehead_c_standard.antasucircle
+    <com.example.antasu.circlehead_c_standard.Antasucircle
         android:id="@+id/antasu_image"
         android:layout_width="50dp"
         android:layout_height="50dp"
@@ -37,6 +37,6 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:text="@string/app_about" />
 
 </RelativeLayout>

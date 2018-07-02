@@ -5,7 +5,7 @@ import android.os.Bundle;
 
 public class MainActivity extends AppCompatActivity {
 
-    private antasucircle head;
+    private Antasucircle head;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

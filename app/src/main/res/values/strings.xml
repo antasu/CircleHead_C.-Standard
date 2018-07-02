@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">CircleHead_C.-Standard</string>
+    <string name="app_about">作者：antasu\n这是一个用来实现特殊头像角标的demo\n直接拿去用吧</string>
 </resources>
